@@ -52,6 +52,16 @@ input, button{
     background: none;
 }
 
+#new-task-form input{
+    flex: 1 1 0%;
+    background-color: var(--darker-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
 #new-task-input{
     flex: 1 1 0%;
     background-color: var(--darker-color);
