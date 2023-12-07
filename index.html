@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task List</title>
+    <title>Tasks List</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -24,19 +24,33 @@
     <main>
         <section class="task-list">
             <h2>Tasks</h2>
-            <div id="tasks"></div>
-            <div> class="content"
-                <input type="text"
-                    class="text"
-                    value="My shiny task"
-                    readonly
-                />
+
+            <div id="tasks">
+
+               <div> class="task">
+                    <div class="content">
+                        <input
+                            type="text"
+                            class="text"
+                            value="My shiny task"
+                            readonly 
+                        />
+                    
+                        
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
             </div>
-
-            <div> class="actions"</div>
-
-            <input type="submit">
+            
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
