@@ -13,6 +13,8 @@
     --gray-darker : #222;
 }
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +33,7 @@ body{
 header{
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--darkest-color);
 }
 
@@ -52,16 +54,6 @@ input, button{
     background: none;
 }
 
-#new-task-form input{
-    flex: 1 1 0%;
-    background-color: var(--darker-color);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: var(--light);
-    font-size: 1.25rem;
-}
-
 #new-task-input{
     flex: 1 1 0%;
     background-color: var(--darker-color);
@@ -76,16 +68,27 @@ input, button{
     color: var(--gray);
 }
 
+
 #new-task-submit{
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    /* background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    */
     cursor: pointer;
     transition: 0.4s;
 }
+
+#new-task-submit:hover{
+    opacity: 0.7;
+}
+
+#new-task-submit:active{
+    opacity: 0.6;
+}
+
 
 main{
     flex: 1 1 0%;
@@ -122,6 +125,7 @@ main{
     transition: 0.4s;
 }
 
+
 #tasks .task .content .text:not(:read-only){
     color: var(--pink);
 }
@@ -140,15 +144,15 @@ main{
     transition: 0.4s;
 }
 
-#tasks .task .actions button:hover{
+.tasks .task .actions button:hover{
     opacity: 0.8;
 }
 
-#tasks .task .actions button:active{
+.tasks .task .actions button:active{
     opacity: 0.6;
 }
 
-#tasks .task .actions .edit{
+.tasks .task .actions .edit{
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

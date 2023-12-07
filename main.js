@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
     const list_el = document.querySelector('#tasks');
@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
         task_input_el.setAttribute('readonly', 'readonly');
 
         task_content_el.appendChild(task_input_el);
+        
 
         const task_actions_el = document.createElement('div');
         task_actions_el.classList.add('actions');
