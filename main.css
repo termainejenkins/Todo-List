@@ -151,13 +151,13 @@ main{
 .tasks .task .actions button:active{
     opacity: 0.6;
 }
-
+/*
 .tasks .task .actions .edit{
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+*/
 #tasks .task .actions .delete{
     color: crimson;
 }

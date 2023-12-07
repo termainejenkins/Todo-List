@@ -28,7 +28,7 @@ window.addEventListener('load', () => {
         task_input_el.setAttribute('readonly', 'readonly');
 
         task_content_el.appendChild(task_input_el);
-        
+
 
         const task_actions_el = document.createElement('div');
         task_actions_el.classList.add('actions');
